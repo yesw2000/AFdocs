@@ -59,7 +59,7 @@ You can also/alternatively run `pre-commit run` (changes only) or
 # Building docs
 
 This project uses MkDocs for documentation. The documentation is automatically
-built and published by ReadTheDocs when changes are pushed to the repository.
+built and published via GitHub Pages when changes are pushed to the main branch.
 
 You can build the docs locally using pixi:
 
