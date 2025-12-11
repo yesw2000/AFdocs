@@ -17,8 +17,8 @@ xrdcp -r root://eosuser.cern.ch//eos/user/d/dschrute/many_files/ .
 ```
 
 as long as you
-[export your x509 proxy](./data_sharing.md#always-check-your-proxy-certificate) to
-your HTCondor jobs.
+[export your x509 proxy](./data_sharing.md#always-check-your-proxy-certificate)
+to your HTCondor jobs.
 
 ///
 
