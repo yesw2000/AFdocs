@@ -23,38 +23,37 @@ grid certificate.
 /// warning | Proxy certificate expiration
 
 Your x509proxy certificate has an expiry date. Once it expires you have to
-create an ATLAS VOMS proxy again in the usual way. You create (or copy it to)
-the shared $HOME filesystem so that the HTCondor scheduler can find and read the
-proxy.
+create an ATLAS VOMS proxy again in the usual way.
 
 ///
 
-This is how you copy it to $HOME:
+/// note | Default location
+
+By default, the `$X509_USER_PROXY` is set to store in your home directory:
 
 ```bash
-voms-proxy-init -voms atlas -out $HOME/x509proxy
+voms-proxy-init -voms atlas
+# stores in /home/$USER/x509_u$UID
 ```
 
-/// tip
-
-Without the term `-out $HOME/x509proxy` you create a new proxy but the one that
-maybe is already in your $HOME directory is still expired.
+The shared `$HOME` filesystem is used so that the HTCondor scheduler can find
+and read the proxy.
 
 ///
 
-Once you renew your proxy certificate, add the following lines to your job
-submit file so that HTCondor configures the job environment automatically for
-x509 authenticated data access:
+Once you renew your proxy certificate, add the following line to your job submit
+file so that HTCondor configures the job environment automatically for x509
+authenticated data access:
 
 ```bash
-universe = vanilla
-
 use_x509userproxy = true  # Required for x509 authentication
-x509userproxy = /home/dschrute/x509proxy  # Path to your proxy certificate
+```
 
-request_memory = 1GB
-request_cpus = 1
-queue 1
+If you need to point at a different location than the default above, you can use
+an additional line
+
+```bash
+x509userproxy = /different/path/to/x509proxy  # Path to your proxy certificate
 ```
 
 ---
