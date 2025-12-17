@@ -29,7 +29,8 @@ coffea-casa examples.
 Please use [https://coffea.af.uchicago.edu](https://coffea.af.uchicago.edu) as
 an access point to the Coffea-Casa Analysis Facility @ UChicago.
 
-   <p align="center"> <img src="/../images/coffea.af.uchicago.edu_hub_login.png"></p>
+![screenshot of coffea.af.uchicago.edu Hub Login](../images/coffea.af.uchicago.edu_hub_login.png)
+
 ## ATLAS AuthZ Authentication Instance
 
 Currently Coffea-Casa Analysis Facility @ UChicago can support any member of
