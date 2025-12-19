@@ -26,10 +26,10 @@ coffea-casa examples.
 
 ## Access
 
-Please use [https://coffea-dev.af.uchicago.edu](https://coffea-dev.af.uchicago.edu) as
+Please use [https://coffea.af.uchicago.edu](https://coffea.af.uchicago.edu) as
 an access point to the Coffea-Casa Analysis Facility @ UChicago.
 
-![screenshot of coffea-dev.af.uchicago.edu Hub Login](../images/coffea.af.uchicago.edu_hub_login.png)
+![screenshot of coffea.af.uchicago.edu Hub Login](../images/coffea.af.uchicago.edu_hub_login.png)
 
 ## ATLAS AuthZ Authentication Instance
 
