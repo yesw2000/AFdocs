@@ -106,9 +106,22 @@ with the font size of 10x20.
 
 ### Setup ATLAS software environment
 
-Once you are on the interactive nodes, you can simply run:
+To make ATLAS-specific commands (including `setupATLAS`) available immediately upon login, add the following lines to your shell startup script (`$HOME/.bashrc` for bash users or `$HOME/.zshrc` for zsh users):
 
-    setupATLAS
+```bash
+# Load USAtlas group environment at BNL
+group_env=/atlasgpfs01/usatlas/group/group_env.sh
+if [ -r "$group_env" ]; then
+    . "$group_env"
+fi
+```
+After you update your startup file, either log out and log back in, or source the file manually:
+```bash
+source ~/.bashrc    # for bash
+# or
+source ~/.zshrc     # for zsh
+```
+From then on, the setupATLAS command will be available in all interactive sessions.
 
 Please be aware that the executable or library built on Alma9 machines cannot
 run on CentOS7 machines because of the system glibc library difference. To use
