@@ -78,9 +78,9 @@ system.
 ### Access to the datasets on BNL dCache
 
 In addition to Rucio (and DQ2Client), a convenient python script
-`/atlasgpfs01/usatlas/group/scripts/pnfs_ls.py` is provided to generate clist file (list of
-physicsl file path) for files in given datasets on BNL dCache, including
-datasets both on BNL rses (such as
+`/atlasgpfs01/usatlas/group/scripts/pnfs_ls.py` is provided to generate clist
+file (list of physicsl file path) for files in given datasets on BNL dCache,
+including datasets both on BNL rses (such as
 **[BNL-OSG2_LOCALGROUPDISK](#localgroupdisk)**) mentioned above) and under BNL
 users dCache area.
 
