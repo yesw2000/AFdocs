@@ -81,7 +81,7 @@ should have been defined for you upon login:
 
 ```bash
 % which eos-copy.py
-/afs/usatlas.bnl.gov/scripts/eos-copy.py
+/atlasgpfs01/usatlas/group/scripts/eos-copy.py
 
 % eos-copy.py -h
 Usage: eos-copy.py [options] eos_source... local_dir
